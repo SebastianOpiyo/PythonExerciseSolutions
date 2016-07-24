@@ -15,7 +15,16 @@ def Exercise3(x):
         dict[x] = x * x
     return dict
 
+def Exercise4(x):
+    
+    #get into list
+    list = x.split(",") 
+    
+    #print both
+    print(list)
+    print(tuple(list))
+    
+
 #call Exercise
-x = int(input("Please enter a number"))
-dict = Exercise3(x)
-print (dict)
+x = input("Enter sequence: ")
+Exercise4(x)
