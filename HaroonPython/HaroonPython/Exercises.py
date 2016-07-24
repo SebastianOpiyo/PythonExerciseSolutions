@@ -9,7 +9,13 @@ def Exercise2(x):
 		return 1
 	return x * Exercise2(x-1)
 
-#call Exercise
-factorial = int(input("Enter Factorial:"))
-print(Exercise2(factorial))
+def Exercise3(x):
+    dict = {}    
+    for x in range(1 , x + 1) : 
+        dict[x] = x * x
+    return dict
 
+#call Exercise
+x = int(input("Please enter a number"))
+dict = Exercise3(x)
+print (dict)
