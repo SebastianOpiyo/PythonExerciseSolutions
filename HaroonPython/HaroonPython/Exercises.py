@@ -24,7 +24,17 @@ def Exercise4(x):
     print(list)
     print(tuple(list))
     
+class Exercise5(object):
+    def __init__(self):
+        self.x = ""
+
+    def getString(self):
+        self.x = input("Enter String:")
+
+    def printString(self):
+        print(self.x.upper())
 
 #call Exercise
-x = input("Enter sequence: ")
-Exercise4(x)
+obj = Exercise5()
+obj.getString()
+obj.printString()
