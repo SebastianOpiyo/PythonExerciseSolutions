@@ -1,4 +1,5 @@
 #Function Definitions
+import math
 def Exercise1():
 	for x in range(2000 , 3200) :
 		if (x % 7 == 0 and x % 5 != 0) :
@@ -34,7 +35,15 @@ class Exercise5(object):
     def printString(self):
         print(self.x.upper())
 
+def Exercise6(x) :
+	C = 50
+	H = 30
+	listOfD = str(x).split(",")
+	listOfQ = []
+	for D in listOfD:
+		Q = str(round(math.sqrt((2 * C * int(D)) / H)))
+		listOfQ.append(Q)	
+	print(",".join(listOfQ))
+
 #call Exercise
-obj = Exercise5()
-obj.getString()
-obj.printString()
+Exercise6(input("Enter comma separate D: "))
