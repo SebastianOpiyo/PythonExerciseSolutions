@@ -45,5 +45,14 @@ def Exercise6(x) :
 		listOfQ.append(Q)	
 	print(",".join(listOfQ))
 
+def Exercise7(x , y):
+	xArray = []
+	for i in range(0 , x):
+		yArray = []
+		for j in range(0 , y):
+			yArray.append(i*j)
+		xArray.append(yArray)
+	print(xArray)
+
 #call Exercise
-Exercise6(input("Enter comma separate D: "))
+Exercise7(int(input("Enter x:")) , int(input("Enter y:")))
