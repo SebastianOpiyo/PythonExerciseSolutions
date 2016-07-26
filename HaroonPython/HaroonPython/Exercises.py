@@ -54,5 +54,10 @@ def Exercise7(x , y):
 		xArray.append(yArray)
 	print(xArray)
 
+def Exercise8(x):
+    unsortedList = x.split(",")
+    sortedList = sorted(unsortedList)
+    print(",".join(sortedList))
+
 #call Exercise
-Exercise7(int(input("Enter x:")) , int(input("Enter y:")))
+Exercise8(input("Enter words: "))
