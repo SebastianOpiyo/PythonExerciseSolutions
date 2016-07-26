@@ -59,5 +59,17 @@ def Exercise8(x):
     sortedList = sorted(unsortedList)
     print(",".join(sortedList))
 
+def Exercise9(lines):
+    for item in lines:
+        print(item.upper())
+    
 #call Exercise
-Exercise8(input("Enter words: "))
+lines = []
+while True:
+    line = input()
+    if line:
+        lines.append(line)
+    else:
+        break
+
+Exercise9(lines)
