@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b648e039-4418-4e71-bc58-54eea7d0c7c1</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Exercises.py</StartupFile>
+    <StartupFile>Exercises1thru10.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Exercises.py" />
+    <Compile Include="Exercises1thru10.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Tests\" />

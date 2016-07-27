@@ -62,14 +62,12 @@ def Exercise8(x):
 def Exercise9(lines):
     for item in lines:
         print(item.upper())
-    
-#call Exercise
-lines = []
-while True:
-    line = input()
-    if line:
-        lines.append(line)
-    else:
-        break
 
-Exercise9(lines)
+def Exercise10(line):
+    lineList = str(line).split(" ")
+    lineListUnique = sorted(list(set(lineList)))
+    print(" ".join(lineListUnique))
+
+
+#call Exercise
+Exercise10(input("Enter words: "))
